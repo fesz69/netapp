@@ -1,6 +1,6 @@
 # NetApp Scripts Repository
 
-Bienvenue dans le repository NetApp Scripts ! 🚀
+Bienvenue dans mon repository NetApp Scripts ! 🚀
 
 Ce repository contient une collection de scripts PowerShell et autres outils utiles pour gérer et automatiser les tâches liées aux baies de stockage NetApp.
 
