@@ -20,7 +20,7 @@ Ce repository a été créé pour centraliser et partager des scripts utiles pou
 
 ## Scripts Disponibles
 
-- **Remove-OldAntiRansomwareSnapshots.ps1** : Script PowerShell pour supprimer les snapshots anti-ransomware vieux de plus de 15 jours.
+- **Remove-OldAntiRansomwareSnapshots.ps1** : Script PowerShell pour supprimer les snapshots anti-ransomware 
 
 D'autres scripts seront ajoutés au fur et à mesure. Restez à l'écoute ! 📡
 
