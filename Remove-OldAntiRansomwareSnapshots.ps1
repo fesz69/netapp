@@ -29,11 +29,8 @@ $Volumes = Get-NcVol
 foreach ($Volume in $Volumes) {
     
 # Si le volume a Antiransomware d'activé et n'est pas un volume root alors supprime l'alerte Antiransomware
-    if ($Volume.AntiRansomware -like "DataONTAP.C.Types.Volume.AntiRansomware" -and $Volume.JunctionPath -ne '/'){
-        Remove-NcAntiRansomwareSuspect -Volume $Volume.Name -vserverContex $Volume.vserver -Confirm:$false
-        Write-Host " Volume $($Volume.Name) declaration en faux positif et snapshot sera supprime dans 4 (a partir de 9.16) ou 24h"
-    }
-       
+   Invoke-Ncssh "set -privilege diag -confirmations off; anti-ransomware volume attack clear-suspect -vserver $($Volume.vserver) -volume $($Volume.Name) -false-positive true"
+  
 }
 
 Write-Host "Operation terminee."
